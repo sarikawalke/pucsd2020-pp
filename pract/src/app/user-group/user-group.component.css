@@ -1,0 +1,44 @@
+
+  h5{
+    font-size: 25px;
+    margin-top: 10px;
+    color: antiquewhite;
+  }
+  /* .userGroup{
+    padding: 53px 353px 50px 150px;
+    background-color: #004eff17;
+    margin: 50px 0px;
+} */
+.userGroup{
+  padding: 41px 80px 82px 97px; 
+  
+  background: rgb(2,0,36,0.08);
+  height: 50vh;
+  margin-top: 30px;
+  
+}
+.sideBtn{
+  background: rgb(2,0,36,0.08);
+}
+
+body{
+    font-family: serif;
+    font-size: 18px;
+   
+}
+.navbar{
+    background-color: mediumvioletred;
+    
+}
+.bgimg{
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(10,83,147,1) 100%, rgba(0,212,255,1) 100%);
+  height: 92vh;
+
+  background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.btnCreatgrp{
+  margin-left: 67px;
+
+}

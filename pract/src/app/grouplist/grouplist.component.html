@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-sm ">
+
+  <app-header class="w-100"></app-header>
+</nav>
+
+<div class="row m-0 bgimg">
+  <div class="col-12 col-sm-12 col-md-3 col-lg-3 border-bottom-1">
+    <app-side-component></app-side-component>
+</div>
+  <div class="col-12 col-sm-12 col-md-8 col-lg-8 Create">
+
+    <h5 style="font-size:large;color: antiquewhite ;">Group Details</h5>
+    <div class=" table-wrapper-scroll-y my-custom-scrollbar table">
+
+      <div class="border">
+        <table class="table table-bordered table-striped mb-0">
+          <thead>
+            <tr>
+              <th scope="col"> Id</th>
+              <th scope="col">Group Name</th>
+              <th scope="col">group info</th>
+
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let group of group">
+
+
+              <td>{{group.id}}</td>
+              <td>{{group.group_name}}</td>
+              <td>{{group.group_info}}</td>
+
+
+            </tr>
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+    

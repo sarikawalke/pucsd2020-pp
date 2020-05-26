@@ -1,0 +1,30 @@
+.bgimg{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(10,83,147,1) 100%, rgba(0,212,255,1) 100%);
+    
+    height: 92vh;
+  
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  th { 
+      color:orange;
+      font-size: large;
+      font-weight: bold;
+      word-spacing: 1px;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+td{
+      color: antiquewhite;
+      font-weight: lighter;
+      text-align: center;
+  }
+  .userDetails{
+    margin-top: 20px;
+  }
+  .navbar{
+    background-color: mediumvioletred;
+    
+}

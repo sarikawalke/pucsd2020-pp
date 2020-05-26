@@ -1,0 +1,33 @@
+
+<nav class="navbar navbar-expand-sm ">
+
+  <app-header class="w-100"></app-header>
+</nav>
+<br>
+<br><br>
+<br><br>
+<br>
+<mat-card>
+  <mat-card-content>
+    <form>
+      <h2>Log In</h2>
+      <mat-form-field class="full-width-input">
+        <input matInput id="id" placeholder="User_Id" [(ngModel)]="userInfo.id" name="username" required>
+        <mat-error>
+          Please provide a valid Id address
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="full-width-input">
+        <input matInput id="password" placeholder="Password" [(ngModel)]="userInfo.password" type="password"
+          name="password" required>
+        <mat-error>
+          Please provide a valid password
+        </mat-error>
+      </mat-form-field>
+      <button mat-raised-button (click)="signUpuser()" color="primary">Login</button>
+    </form>
+  </mat-card-content>
+</mat-card>
+
+
+      

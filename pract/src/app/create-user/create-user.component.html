@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-sm ">
+
+  <app-header class="w-100"></app-header>
+</nav>
+<br>
+<br><br>
+<mat-card>
+  <mat-card-content>
+    <form>
+      <h2>Create User</h2>
+      <!--  <div class="form-group">    
+       
+     -->
+
+      <div class="form-group" [formGroup]="myGroup">
+        <mat-form-field class="full-width-input">
+          <input matInput placeholder="First Name" [(ngModel)]="users.first_name" formControlName="first_name" required>
+
+
+        </mat-form-field>
+
+      </div>
+      <div class="form-group" [formGroup]="myGroup">
+        <mat-form-field class="full-width-input">
+          <input matInput placeholder="Last Name" [(ngModel)]="users.last_name" formControlName="last_name" required>
+
+        </mat-form-field>
+      </div>
+
+      <!-- <div class="form-group" [formGroup]="myGroup">
+        <mat-form-field class="full-width-input">
+          <input matInput placeholder="Username" [(ngModel)]="users.username" formControlName="username" required>
+
+        </mat-form-field>
+
+      </div> -->
+      <div class="form-group" [formGroup]="myGroup">
+        <mat-form-field class="full-width-input">
+          <input matInput type="password" [(ngModel)]="users.password" placeholder="Password" formControlName="password"
+            required>
+
+        </mat-form-field>
+      </div>
+      <div class="form-group" [formGroup]="myGroup">
+        <button mat-raised-button color="warn"
+          (click)="onSubmitCreateUser()">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button mat-raised-button color="primary" (click)="resetUser()">Reset</button>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>
