@@ -1,0 +1,61 @@
+----------------------- users table -------------------------------
+http://localhost:9090/webapi/v1/user        - get all
+http://localhost:9090/webapi/v1/user/{id}   - get by id
+http://localhost:9090/webapi/v1/user        - post
+http://localhost:9090/webapi/v1/user/{id}   - delete
+
+post api object 
+{
+	"first_name": "John",
+	"last_name": "Doe",
+	"password": "password11"
+}
+-----------------------------------------------------------------------
+
+
+
+------------------------- group table -----------------------------
+http://localhost:9090/webapi/v1/group           - get all
+http://localhost:9090/webapi/v1/group/{id}      - get by id
+http://localhost:9090/webapi/v1/group           - post
+http://localhost:9090/webapi/v1/group/{id}      - delete
+
+post api object 
+{
+	"group_name": "maroon 5",
+	"group_info": "band from california"
+}
+-----------------------------------------------------------------------
+
+
+---------------------------- admin table ---------------------------
+to check whether user is admin or not. 
+http://localhost:9090/webapi/v1/admin           - get all
+http://localhost:9090/webapi/v1/admin/{id}      - get by id
+http://localhost:9090/webapi/v1/admin           - post
+http://localhost:9090/webapi/v1/admin/{id}      - delete
+-----------------------------------------------------------------------
+
+
+------------------------------ login api ----------------------------
+http://localhost:9090/webapi/v1/login           - post
+
+post object
+{
+	"id": 2,
+	"password": "password2"
+}
+
+-----------------------------------------------------------------------
+
+------------------------------ usergroup api ----------------------------
+http://localhost:9090/webapi/v1/usergroup			- get	- get all usergroup present in the db
+http://localhost:9090/webapi/v1/usergroup/{id}		- getbyid	- get group_id based on user_id (list of group_id)
+http://localhost:9090/webapi/v1/usergroup			- post  - create entry in database
+post object
+{
+	"user_id": 1,
+	"group_id": 3
+}
+
+-----------------------------------------------------------------------
